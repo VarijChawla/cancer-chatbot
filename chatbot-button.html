@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cancer Chatbot Button</title>
+  <title>Floating Cancer Chatbot</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      background: transparent !important;
     }
 
     #chatbot-frame {
@@ -20,6 +21,8 @@
       z-index: 9999;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
       border-radius: 10px;
+      background-color: transparent;
+      backdrop-filter: blur(6px); /* Optional: adds a glassy effect */
     }
 
     #toggle-button {
@@ -39,16 +42,12 @@
 
     #toggle-button:hover {
       background-color: #45a049;
-
-      #body{
-        background-color: none;
-      }
     }
   </style>
 </head>
 <body>
 
-<iframe id="chatbot-frame" src="https://varijchawla.github.io/cancer-chatbot/"></iframe>
+<iframe id="chatbot-frame" src="https://cancer-chatbot-1.onrender.com/" allowtransparency="true"></iframe>
 
 <button id="toggle-button">💬</button>
 
