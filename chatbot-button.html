@@ -9,12 +9,8 @@
       padding: 0;
       height: 100%;
       width: 100%;
-      background-color: transparent !important;
+      background: transparent !important;
       overflow: hidden;
-    }
-
-    body {
-      background: none !important;
     }
 
     #chatbot-frame {
@@ -25,10 +21,9 @@
       height: 600px;
       border: none;
       display: none;
-      z-index: 1001;
-      border-radius: 10px;
+      z-index: 9999;
+      border-radius: 12px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      background: transparent; /* Ensures iframe itself is transparent */
     }
 
     #toggle-button {
@@ -43,7 +38,7 @@
       border-radius: 50%;
       font-size: 26px;
       cursor: pointer;
-      z-index: 1002;
+      z-index: 10000;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
   </style>
@@ -53,9 +48,9 @@
 <iframe 
   id="chatbot-frame" 
   src="https://cancer-chatbot-1.onrender.com/" 
-  allowtransparency="true"
-  style="background: transparent;"
-  frameborder="0">
+  allowtransparency="true" 
+  frameborder="0"
+  style="background: transparent !important;">
 </iframe>
 
 <button id="toggle-button">💬</button>
