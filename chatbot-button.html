@@ -9,7 +9,7 @@
       padding: 0;
       height: 100%;
       width: 100%;
-      background-color: transparent;
+      background-color: transparent !important;
       overflow: hidden;
     }
 
@@ -28,6 +28,7 @@
       z-index: 1001;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background: transparent; /* Ensures iframe itself is transparent */
     }
 
     #toggle-button {
@@ -52,7 +53,8 @@
 <iframe 
   id="chatbot-frame" 
   src="https://cancer-chatbot-1.onrender.com/" 
-  allowtransparency="true" 
+  allowtransparency="true"
+  style="background: transparent;"
   frameborder="0">
 </iframe>
 
